@@ -15,7 +15,7 @@ const StyledInput = styled.TextInput`
 `;
 
 const Input = props => {
-    return <StyledInput placeholder={props.title}placeholderTextColor='#3498db' />
+    return <StyledInput value={props.value} onChangeText={props.onChangeText} placeholder={props.title}placeholderTextColor='#3498db' />
 }
 
 export default Input;
