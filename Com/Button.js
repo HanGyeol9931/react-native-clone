@@ -17,8 +17,9 @@ const Title = styled.Text`
 `;
 
 const Button = props => {
+    console.log(props);
     return (
-        <ButtonContainer>
+        <ButtonContainer onPress={props.onPress}>
             <Title>{props.title}</Title>
         </ButtonContainer>
     );
