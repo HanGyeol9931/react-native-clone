@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components/native';
+// expo-constants 높이 계산
+import Constants from 'expo-constants';
+
 
 const StyledInput = styled.TextInput`
   min-width: 60%;
@@ -26,7 +29,28 @@ const Image2 = styled.Image`
 `;
 const Main = styled.View`
     flex: 1;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    background-color: white;
+    /* Constants.statusBarHeight : 상단 높이 계산해줌  */
+    padding-top: ${Constants.statusBarHeight+"px"};
 `
+const ButtonBtnContainer = styled.View`
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+`;
+const ButtonContainer = styled.TouchableOpacity`
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+    background-color: #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 15px 0px;
+    justify-content: center;
+    align-items: center;
+`;
 
-export {StyledInput,Container,Image2,Main}
+export {StyledInput,Container,Image2,Main,ButtonBtnContainer,ButtonContainer}
