@@ -23,12 +23,8 @@ const BorderTitle = styled.Text`
   font-weight: 800;
   font-size: 16px;
   color: black;
-  /* background-color: red; */
-  /* justify-content: space-between; */
 `;
 const BorderContent = styled.Text`
-  /* font-weight: 600; */
-  /* background-color: red; */
   padding: 0 5px;
   color: black;
 `;

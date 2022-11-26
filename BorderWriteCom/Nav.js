@@ -4,7 +4,6 @@ import Text from "react-native";
 
 const ViewContainer = styled.View`
   height: 40px;
-  /* background-color: blue; */
   flex-direction: row;
   justify-content: space-between;
   padding: 0 10px;

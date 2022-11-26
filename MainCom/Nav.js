@@ -11,7 +11,6 @@ const ViewContainer = styled.View`
   align-items: center;
 `;
 const NavBar = () => {
-  // console.log(props);
   return (
     <ViewContainer>
       <Entypo name="twitter" size={24} color="#3498db" />

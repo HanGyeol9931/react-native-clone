@@ -6,7 +6,6 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 const FooterContainer = styled.View`
   height: 80px;
-  /* background-color: red; */
   border-top-width: 0.25px gray;
 `;
 
